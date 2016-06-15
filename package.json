@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lddubeau-base",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Base eslint configuration for my projects.",
   "main": "index.js",
   "scripts": {
