@@ -16,6 +16,7 @@ module.exports = {
     quotes: [2, "double"],
     "vars-on-top": "off",
     "no-param-reassign": "off",
+    "no-multi-str": "off",
     strict: ["error", "safe"],
     "brace-style": ["error", "stroustrup"],
     "no-underscore-dangle": "off",
