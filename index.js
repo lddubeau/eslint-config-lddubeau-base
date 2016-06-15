@@ -14,6 +14,7 @@ module.exports = {
   },
   rules: {
     quotes: [2, "double"],
+    indent: ["error", 2, { SwitchCase: 0, VariableDeclarator: 1 }],
     "vars-on-top": "off",
     "no-param-reassign": "off",
     "no-multi-str": "off",
