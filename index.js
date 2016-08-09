@@ -22,6 +22,10 @@ module.exports = {
     "brace-style": ["error", "stroustrup"],
     "no-underscore-dangle": "off",
     "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    // In pre-ES5 code, parseInt would interpret 0-prefixed decimals as
+    // octal. ES5 removed that. We do not target pre-ES5 environments, so
+    // the "always" setting is too much.
+    radix: ["error", "as-needed"],
     // This is here primarily to remove the ForInStatement that
     // airbnb imposes.
     "no-restricted-syntax": [
