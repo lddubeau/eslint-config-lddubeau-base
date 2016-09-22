@@ -35,5 +35,9 @@ module.exports = {
       "LabeledStatement",
       "WithStatement",
     ],
+    //
+    // Work around: https://github.com/airbnb/javascript/issues/978
+    //
+    "react/require-extension": "off",
   },
 };

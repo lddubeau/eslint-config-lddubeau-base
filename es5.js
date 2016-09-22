@@ -17,9 +17,5 @@ module.exports = {
     "no-var": "off",
     "prefer-template": "off",
     "prefer-rest-params": "off",
-    //
-    // Work around: https://github.com/airbnb/javascript/issues/978
-    //
-    "react/require-extension": "off",
   },
 };
