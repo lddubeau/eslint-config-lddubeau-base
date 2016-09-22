@@ -36,6 +36,7 @@ module.exports = {
       "WithStatement",
     ],
     "no-plusplus": "off",
+    "generator-star-spacing": ["error", { before: true, after: false }],
     //
     // Work around: https://github.com/airbnb/javascript/issues/978
     //
