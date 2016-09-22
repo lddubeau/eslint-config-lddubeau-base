@@ -17,5 +17,6 @@ module.exports = {
     "no-var": "off",
     "prefer-template": "off",
     "prefer-rest-params": "off",
+    "prefer-spread": "off",
   },
 };
