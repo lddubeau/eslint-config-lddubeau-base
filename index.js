@@ -35,6 +35,7 @@ module.exports = {
       "LabeledStatement",
       "WithStatement",
     ],
+    "no-plusplus": "off",
     //
     // Work around: https://github.com/airbnb/javascript/issues/978
     //
