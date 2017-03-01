@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lddubeau-base",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Base eslint configuration for my projects.",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "eslint-config-airbnb": "^11"
   },
   "peerDependencies": {
-    "eslint": "^3.5.0"
+    "eslint": "^3.16.1"
   },
   "devDependencies": {
     "pre-commit": "^1.1.3"
