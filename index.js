@@ -15,10 +15,13 @@ module.exports = {
   },
   rules: {
     quotes: [2, "double"],
-    indent: ["error", 2, {
+    "indent-legacy": ["error", 2, {
       SwitchCase: 0,
       VariableDeclarator: 1,
       ArrayExpression: "first",
+      CallExpression: {
+        arguments: "first",
+      },
     }],
     "vars-on-top": "off",
     "no-param-reassign": "off",
@@ -46,5 +49,15 @@ module.exports = {
     // Work around: https://github.com/airbnb/javascript/issues/978
     //
     "react/require-extension": "off",
+    "function-paren-newline": "off",
+    indent: "off", // It just does not play well with Emacs modes.
+    "no-multi-assign": "off",
+    "comma-dangle": ["error", {
+      arrays: "always-multiline",
+      objects: "always-multiline",
+      imports: "always-multiline",
+      exports: "always-multiline",
+      functions: "never", // Does not play well with Emacs modes.
+    }],
   },
 };
