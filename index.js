@@ -59,5 +59,10 @@ module.exports = {
       exports: "always-multiline",
       functions: "never", // Does not play well with Emacs modes.
     }],
+    // Override airbnb's bad defaults.
+    "object-curly-newline": ["error", {
+      ObjectExpression: { multiline: true, consistent: true },
+      ObjectPattern: { multiline: true, consistent: true },
+    }],
   },
 };
