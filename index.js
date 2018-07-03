@@ -31,9 +31,10 @@ module.exports = {
     "no-underscore-dangle": "off",
     "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     // In pre-ES5 code, parseInt would interpret 0-prefixed decimals as
-    // octal. ES5 removed that. We do not target pre-ES5 environments, so
-    // the "always" setting is too much.
-    radix: ["error", "as-needed"],
+    // octal. ES5 removed that. We do not target pre-ES5 environments, so it
+    // would be tempting to have as-needed here. However, there are still cases
+    // where we can shoot ourselves in the foot if we leave it unspecified.
+    radix: ["error", "always"],
     // This is here primarily to remove the ForInStatement that
     // airbnb imposes.
     "no-restricted-syntax": [
