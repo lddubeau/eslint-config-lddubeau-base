@@ -14,7 +14,9 @@ module.exports = {
     commonjs: false,
   },
   rules: {
-    quotes: [2, "double"],
+    quotes: ["error", "double", {
+      allowTemplateLiterals: true,
+    }],
     "indent-legacy": ["error", 2, {
       SwitchCase: 0,
       VariableDeclarator: 1,
