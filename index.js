@@ -67,5 +67,7 @@ module.exports = {
       ObjectExpression: { multiline: true, consistent: true },
       ObjectPattern: { multiline: true, consistent: true },
     }],
+    // Override airbnb's bad default.
+    "operator-linebreak": ["error", "after"],
   },
 };
