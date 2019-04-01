@@ -69,5 +69,8 @@ module.exports = {
     }],
     // Override airbnb's bad default.
     "operator-linebreak": ["error", "after"],
+    // We never use default exports.
+    "import/prefer-default-export": "off",
+    "import/no-default-export": ["error"],
   },
 };
