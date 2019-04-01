@@ -19,5 +19,6 @@ module.exports = {
     "prefer-template": "off",
     "prefer-rest-params": "off",
     "prefer-spread": "off",
+    "prefer-destructuring": "off",
   },
 };
