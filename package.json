@@ -24,10 +24,10 @@
     "eslint-plugin-react": "^7.13.0"
   },
   "peerDependencies": {
-    "eslint": "^5"
+    "eslint": "^6"
   },
   "devDependencies": {
-    "eslint": "^5.13.0",
+    "eslint": "^6.0.0",
     "pre-commit": "^1.2.2",
     "renovate-config-lddubeau": "^1.0.0"
   },
