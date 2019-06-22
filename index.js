@@ -72,5 +72,6 @@ module.exports = {
     // We never use default exports.
     "import/prefer-default-export": "off",
     "import/no-default-export": ["error"],
+    "no-console": "error",
   },
 };
