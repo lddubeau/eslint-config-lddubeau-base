@@ -73,5 +73,11 @@ module.exports = {
     "import/prefer-default-export": "off",
     "import/no-default-export": ["error"],
     "no-console": "error",
+    "max-classes-per-file": "off", // Sigh... another stupid rule.
+    // Revert the arrow-parens rule to what it used to be. AirBnb changed the
+    // rule to always require them.
+    "arrow-parens": ["error", "as-needed", {
+      requireForBlockBody: true,
+    }],
   },
 };
