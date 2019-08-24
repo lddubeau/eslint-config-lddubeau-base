@@ -27,7 +27,7 @@
     "eslint": "^5 || ^6"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
+    "eslint": "^6.2.2",
     "pre-commit": "^1.2.2",
     "renovate-config-lddubeau": "^1.0.0"
   },
