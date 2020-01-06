@@ -7,12 +7,6 @@ module.exports = {
   parserOptions: {
     sourceType: "script",
   },
-  env: {
-    amd: true,
-    browser: true,
-    node: false,
-    commonjs: false,
-  },
   rules: {
     "strict": ["error", "safe"],
     "indent-legacy": ["error", 2, {
