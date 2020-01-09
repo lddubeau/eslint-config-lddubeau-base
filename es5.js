@@ -20,5 +20,6 @@ module.exports = {
     "prefer-rest-params": "off",
     "prefer-spread": "off",
     "prefer-destructuring": "off",
+    "prefer-arrow/prefer-arrow-functions": "off",
   },
 };
