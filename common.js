@@ -84,6 +84,8 @@ module.exports = {
       "error",
       {
         code: 80,
+        // These directives can get quite long. Ignore them.
+        ignorePattern: "//\\s*eslint-disable-next-line\\b",
       },
     ],
     "new-parens": "error",
