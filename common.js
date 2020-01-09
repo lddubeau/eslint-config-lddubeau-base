@@ -157,5 +157,6 @@ module.exports = {
     "spaced-comment": "error",
     "use-isnan": "error",
     "valid-typeof": "off",
+    "lines-between-class-members": "off",
   },
 };
