@@ -159,5 +159,6 @@ module.exports = {
     "use-isnan": "error",
     "valid-typeof": "off",
     "lines-between-class-members": "off",
+    "implicit-arrow-linebreak": "off",
   },
 };
