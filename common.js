@@ -44,13 +44,14 @@ module.exports = {
     "function-paren-newline": "off",
     "indent": "off", // It just does not play well with Emacs modes.
     "no-multi-assign": "off",
-    "comma-dangle": ["error", {
-      arrays: "always-multiline",
-      objects: "always-multiline",
-      imports: "always-multiline",
-      exports: "always-multiline",
-      functions: "never", // Does not play well with Emacs modes.
-    }],
+    // We've reverted to the AirBnB default
+    // "comma-dangle": ["error", {
+    //   arrays: "always-multiline",
+    //   objects: "always-multiline",
+    //   imports: "always-multiline",
+    //   exports: "always-multiline",
+    //   functions: "never", // Does not play well with Emacs modes.
+    // }],
     // Override airbnb's bad defaults.
     "object-curly-newline": ["error", {
       ObjectExpression: { multiline: true, consistent: true },
