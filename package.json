@@ -25,14 +25,14 @@
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prefer-arrow": "^1.1.7",
-    "eslint-plugin-react": "^7.16.0"
+    "eslint-plugin-react": "^7.18.0"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prefer-arrow": "^1.1.7",
-    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react": "^7.18.0",
     "pre-commit": "^1.2.2",
     "renovate-config-lddubeau": "^1.0.0"
   },
