@@ -25,7 +25,8 @@
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prefer-arrow": "^1.1.7",
-    "eslint-plugin-react": "^7.18.0"
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-simple-import-sort": "^5.0.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -33,6 +34,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prefer-arrow": "^1.1.7",
     "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-simple-import-sort": "^5.0.1",
     "pre-commit": "^1.2.2",
     "renovate-config-lddubeau": "^1.0.0"
   },

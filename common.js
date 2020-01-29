@@ -9,6 +9,7 @@ module.exports = {
   ],
   plugins: [
     "prefer-arrow",
+    "simple-import-sort",
   ],
   reportUnusedDisableDirectives: true,
   rules: {
@@ -80,7 +81,9 @@ module.exports = {
     ],
     "guard-for-in": "error",
     "id-match": "error",
-    "import/order": "error",
+    "import/order": "off",
+    "sort-imports": "off",
+    "simple-import-sort/sort": "error",
     "max-len": [
       "error",
       {
