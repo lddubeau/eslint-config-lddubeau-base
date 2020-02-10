@@ -1,7 +1,30 @@
 "use strict";
 
+const path = require("path");
+
 // These are the rules that pertain to any language that eslint supports (JS and
 // TS).
+
+//
+// We check whether the package is in a monorepo and extract the monorepo name
+// so that we can sort monorepo-local imports in their own group.
+//
+let packageName;
+try {
+  // eslint-disable-next-line global-require, import/no-dynamic-require
+  packageName = require(path.resolve(process.cwd(), "./package.json")).name;
+}
+catch (ex) {
+  if (ex.code !== "MODULE_NOT_FOUND") {
+    throw ex;
+  }
+  packageName = "";
+}
+
+const monorepoRe = packageName[0] === "@" ? `^${packageName.split("/")[0]}/` :
+      // This cannot ever match anything in the Regexp implementation in
+      // ECMAScript.
+      "[]";
 
 module.exports = {
   extends: [
@@ -83,7 +106,20 @@ module.exports = {
     "id-match": "error",
     "import/order": "off",
     "sort-imports": "off",
-    "simple-import-sort/sort": "error",
+    "simple-import-sort/sort": ["error", {
+      groups: [
+        // Side effect imports.
+        ["^\\u0000"],
+        // Packages.
+        ["^@?\\w"],
+        // The monorepo packages.
+        [monorepoRe],
+        // Absolute imports and other imports such as Vue-style `@/foo`.
+        ["^[^.]"],
+        // Relative imports.
+        ["^\\."],
+      ],
+    }],
     "max-len": [
       "error",
       {
@@ -137,6 +173,7 @@ module.exports = {
     "no-unused-expressions": "error",
     "no-unused-labels": "error",
     "no-var": "error",
+    "no-warning-comments": "error",
     "object-shorthand": "error",
     "one-var": [
       "error",
@@ -163,5 +200,11 @@ module.exports = {
     "valid-typeof": "off",
     "lines-between-class-members": "off",
     "implicit-arrow-linebreak": "off",
+    "max-lines-per-function": ["error", {
+      max: 100,
+      skipBlankLines: true,
+      skipComments: true,
+    }],
+    "no-delete-var": "error",
   },
 };
