@@ -1,7 +1,7 @@
 /* global module */
 module.exports = {
   extends: [
-    "./es5.js"
+    "./index.js"
   ],
   env: {
     node: true
