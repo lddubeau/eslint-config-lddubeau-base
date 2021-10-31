@@ -106,7 +106,7 @@ module.exports = {
     "id-match": "error",
     "import/order": "off",
     "sort-imports": "off",
-    "simple-import-sort/sort": ["error", {
+    "simple-import-sort/imports": ["error", {
       groups: [
         // Side effect imports.
         ["^\\u0000"],
